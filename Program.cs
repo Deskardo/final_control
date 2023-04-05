@@ -22,10 +22,13 @@ string[] CreateArray(int size)
 
   for (int i = 0; i < size; i++)
   {
+    Console.WriteLine($"Введите {i+1} значение:");
     arr[i] = Console.ReadLine()!;
   }
   return arr;
 }
+
+
 
 
 Console.WriteLine("Введите размер массива");
