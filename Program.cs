@@ -5,7 +5,7 @@
 
 Console.Clear();
 
-void Print(string[] arr)
+void Print(string[] arr)  // метод печати массива
 {
   int size = arr.Length;
 
@@ -16,7 +16,7 @@ void Print(string[] arr)
   Console.WriteLine();
 }
 
-string[] CreateArray(int size)
+string[] CreateArray(int size) // наполенение исходного массива
 {
   string[] arr = new string[size];
 
@@ -28,7 +28,7 @@ string[] CreateArray(int size)
   return arr;
 }
 
-void ThreeArray(string[] arr, string[] arr2)
+void ThreeArray(string[] arr, string[] arr2) // выборка подходящих значений и наполнение массива значениями до трех символов
 {
   int j = 0;
   for (int i = 0; i < arr.Length; i++)
@@ -43,12 +43,12 @@ void ThreeArray(string[] arr, string[] arr2)
 
 
 Console.WriteLine("Введите размер массива");
-int len = int.Parse(Console.ReadLine()!);
+int len = int.Parse(Console.ReadLine()!); // задайте длину масива
 
-string[] array = CreateArray(len);
-string[] finalArray = new string[len];
+string[] array = CreateArray(len);        
+string[] finalArray = new string[len];    
 
-ThreeArray(array, finalArray);
+ThreeArray(array, finalArray);           
 
 Print(array);
 
