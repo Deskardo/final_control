@@ -30,7 +30,7 @@ string[] CreateArray(int size)
 
 void ThreeArray(string[] arr, string[] arr2)
 {
-  int j= 1;
+  int j = 0;
   for (int i = 0; i < arr.Length; i++)
   {
     if (arr[i].Length <= 3)
@@ -43,15 +43,15 @@ void ThreeArray(string[] arr, string[] arr2)
 
 
 Console.WriteLine("Введите размер массива");
-int num = int.Parse(Console.ReadLine()!);
+int len = int.Parse(Console.ReadLine()!);
 
-string[] array = CreateArray(num);
-string[] finalArray = new string[array.Length];
+string[] array = CreateArray(len);
+string[] finalArray = new string[len];
 
 ThreeArray(array, finalArray);
 
 Print(array);
 
-Console.WriteLine("Обновленный массив с элемнтами длиной не более трех символов:");
+Console.WriteLine("Обновленный массив с элементами длиной не более трех символов:");
 
 Print(finalArray);
